@@ -6,6 +6,8 @@
  */
 
 var rotate = function(nums, k) {
+    nums.unshift(nums[nums.length-1])
+    nums.pop()
     return nums
 };
 
