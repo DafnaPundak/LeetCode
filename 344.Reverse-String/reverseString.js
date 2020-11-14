@@ -5,3 +5,5 @@
 var reverseString = function(s) {
     
 };
+
+module.exports = reverseString
