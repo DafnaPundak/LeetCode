@@ -6,7 +6,7 @@
  */
 
 var rotate = function(nums, k) {
-    
+    return nums
 };
 
 module.exports = rotate
