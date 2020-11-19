@@ -7,3 +7,7 @@ test("", () => {
 test("", () => {
   expect(countAndSay(2)).toEqual("11");
 });
+
+test("", () => {
+    expect(countAndSay(3)).toEqual("21");
+  });

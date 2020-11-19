@@ -3,15 +3,20 @@
  * @return {string}
  */
 var countAndSay = function (n) {
-  let say = "1";
-  if ((n == 1)) {
-    return say;
-  } else {
-    for (let i = 2; i <= n; i++) {
-      let count = 1;
-      return say.concat(count);
+  let digit = "1";
+  for (let i = 1; i < n; i++) {
+    let digitArray = digit.split("");
+    let count = 1;
+    digit = "";
+    for (j = 0; j < digitArray.length; j++) {
+      if (digitArray[j] !== digitArray[j + 1]) {
+        digit += count + digitArray[j];
+      } else {
+        count++;
+      }
     }
   }
+  return digit;
 };
 
 module.exports = countAndSay;
