@@ -11,6 +11,7 @@ var countAndSay = function (n) {
     for (j = 0; j < digitArray.length; j++) {
       if (digitArray[j] !== digitArray[j + 1]) {
         digit += count + digitArray[j];
+        count = 1;
       } else {
         count++;
       }
