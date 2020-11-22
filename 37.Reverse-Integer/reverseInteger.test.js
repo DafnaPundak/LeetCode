@@ -1,5 +1,9 @@
 const reverse = require("./reverseInteger");
 
 test("", () => {
-  expect(reverse(0)).toEqual(0);
+  expect(reverse("")).toEqual("");
+});
+
+test("", () => {
+  expect(reverse(1)).toEqual(1);
 });
