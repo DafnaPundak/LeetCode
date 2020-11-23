@@ -11,12 +11,20 @@ var reverse = function (x) {
     for (let i = xArray.length - 1; i >= 0; i--) {
       newArray.push(xArray[i]);
     }
-    return Number(newArray.join(""));
+    if (Number(newArray.join("")) > 2 ** 31 - 1) {
+      return 0;
+    } else {
+      return Number(newArray.join(""));
+    }
   } else if (x < 0) {
     for (let i = xArray.length - 1; i >= 1; i--) {
       newArray.push(xArray[i]);
     }
-    return ~Number(newArray.join("")) + 1;
+    if (~Number(newArray.join("")) + 1 < -(2 ** 31)) {
+      return 0;
+    } else {
+      return ~Number(newArray.join("")) + 1;
+    }
   } else {
     return 0;
   }

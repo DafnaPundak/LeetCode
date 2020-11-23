@@ -27,3 +27,11 @@ test("", () => {
   test("", () => {
     expect(reverse(0)).toEqual(0);
   });
+
+  test("", () => {
+    expect(reverse(120)).toEqual(21);
+  });
+
+  test("", () => {
+    expect(reverse(1534236469)).toEqual(0);
+  });
