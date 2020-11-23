@@ -16,14 +16,14 @@ var reverse = function (x) {
     } else {
       return Number(newArray.join(""));
     }
-  } else if (x < 0) {
+  } else if (x < 0 && x > -(2 ** 31)) {
     for (let i = xArray.length - 1; i >= 1; i--) {
       newArray.push(xArray[i]);
     }
-    if (~Number(newArray.join("")) + 1 < -(2 ** 31)) {
+    if (Number("-"+Number(newArray.join(""))) < -(2 ** 31)) {
       return 0;
     } else {
-      return ~Number(newArray.join("")) + 1;
+      return Number("-"+Number(newArray.join("")))
     }
   } else {
     return 0;

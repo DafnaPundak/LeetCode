@@ -21,17 +21,25 @@ test("", () => {
 });
 
 test("", () => {
-    expect(reverse(-123)).toEqual(-321);
-  });
+  expect(reverse(-123)).toEqual(-321);
+});
 
-  test("", () => {
-    expect(reverse(0)).toEqual(0);
-  });
+test("", () => {
+  expect(reverse(0)).toEqual(0);
+});
 
-  test("", () => {
-    expect(reverse(120)).toEqual(21);
-  });
+test("", () => {
+  expect(reverse(120)).toEqual(21);
+});
 
-  test("", () => {
-    expect(reverse(1534236469)).toEqual(0);
-  });
+test("", () => {
+  expect(reverse(1534236469)).toEqual(0);
+});
+
+test("", () => {
+  expect(reverse(-2147483648)).toEqual(0);
+});
+
+test("", () => {
+  expect(reverse(-1563847412)).toEqual(0);
+});
