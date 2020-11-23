@@ -9,5 +9,13 @@ test("", () => {
 });
 
 test("", () => {
-    expect(reverse(12)).toEqual(21);
-  });
+  expect(reverse(12)).toEqual(21);
+});
+
+test("", () => {
+  expect(reverse(123)).toEqual(321);
+});
+
+test("", () => {
+  expect(reverse(1234)).toEqual(4321);
+});

@@ -4,10 +4,10 @@
  */
 
 var reverse = function (x) {
-  let newArray = (x + "").split("");
-  for (let i = newArray.length - 1; i > 0; i--) {
-    let digitToPush = Number(newArray.splice(i, 1));
-    newArray.unshift(digitToPush);
+  let xArray = (x + "").split("");
+  let newArray = [];
+  for (let i = xArray.length - 1; i >= 0; i--) {
+    newArray.push(xArray[i]);
   }
 
   return Number(newArray.join(""));
