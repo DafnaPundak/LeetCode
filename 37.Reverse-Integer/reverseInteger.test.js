@@ -23,3 +23,7 @@ test("", () => {
 test("", () => {
     expect(reverse(-123)).toEqual(-321);
   });
+
+  test("", () => {
+    expect(reverse(0)).toEqual(0);
+  });

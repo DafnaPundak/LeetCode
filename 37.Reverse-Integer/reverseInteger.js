@@ -17,6 +17,8 @@ var reverse = function (x) {
       newArray.push(xArray[i]);
     }
     return ~Number(newArray.join("")) + 1;
+  } else {
+    return 0;
   }
 };
 
