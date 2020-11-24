@@ -3,7 +3,7 @@
  * @return {number}
  */
 
-var reverseOld = function (x) {
+var reverse = function (x) {
   let xArray = (x + "").split("");
   let newArray = [];
 
@@ -30,7 +30,7 @@ var reverseOld = function (x) {
   }
 };
 
-var reverse = function (x) {
+var reverseOld = function (x) {
   let reversed = Number(Math.abs(x).toString().split("").reverse().join(""));
   if (x > 0 && reversed < 2 ** 31 - 1) {
     return reversed;
