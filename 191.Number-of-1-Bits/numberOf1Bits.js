@@ -3,14 +3,14 @@
  * @return {number}
  */
 var hammingWeight = function (n) {
-  let nArray = (""+n).split("");
-  let count = 0;
+  let nArray = n.toString(2).split("");
+  let counter = 0;
   for (i = 0; i < nArray.length; i++) {
     if (nArray[i] == 1) {
-      count++;
+      counter++;
     }
   }
-  return count;
+  return counter;
 };
 
 module.exports = hammingWeight;
